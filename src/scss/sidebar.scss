@@ -55,10 +55,10 @@ $active-color: #f05732;
 
                 p {
                     background-color: transparent;
-                    color: white;
+                    color: rgb(146, 146, 146);
                     font-weight: 600;
                     text-decoration: none;
-                    letter-spacing: .50px;
+                    letter-spacing: .75px;
                 }
 
                 i {
@@ -79,6 +79,11 @@ $active-color: #f05732;
                 padding-left: 20px;
                 margin-left: 5px;
                 background-color: #293039;
+
+                p {
+                    color: white;
+                }
+                
             }
 
             i {

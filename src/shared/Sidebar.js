@@ -26,13 +26,13 @@ const Sidebar = () => {
 
                 <NavLink to="/collections" activeClassName="nav-active">
                     <div className="option-container">
-                        <p><i className="fas fa-home"></i>Collections</p>
+                        <p><i className="fas fa-folder"></i>Collections</p>
                     </div>
                 </NavLink>
 
                 <NavLink to="/analytics" activeClassName="nav-active">
                     <div className="option-container">
-                        <p><i className="fas fa-home"></i>Analytics</p>
+                        <p><i className="fas fa-chart-pie"></i>Analytics</p>
                     </div>
                 </NavLink>
             </div>

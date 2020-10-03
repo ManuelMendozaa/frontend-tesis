@@ -1,0 +1,88 @@
+$main-color: #f05732;
+
+.upload-file {
+    margin: 15px;
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    border-bottom: 5px solid $main-color;
+    
+    .format {
+        height: 45px;
+        width: 45px;
+        border-radius: 10px;
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+
+        p {
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+    .file-progress {
+        width: calc(100% - 60px);
+        font-size: 14px;
+
+        
+
+        .file-info {
+            display: flex;
+            justify-content: space-between;
+
+            .file-name, .file-size-wrap{
+                display: flex;
+                align-items: center;
+            }
+
+            .file-size-wrap .file-size{
+                margin-right: 15px;
+            }
+
+            .file-size-wrap .file-delete {
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border-radius: 50%;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .file-size-wrap .file-delete {
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .file-size-wrap .file-delete:hover {
+                background-color: #da4621;
+            }
+
+        }
+
+        .progress {
+            position: relative;
+            width: 100%;
+            height: 5px;
+            background: #efefef;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-top: 8px;
+        
+            .progress-bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #58e380;
+            }
+        }
+
+
+
+    }
+}

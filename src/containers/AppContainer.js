@@ -6,6 +6,8 @@ import "../scss/app-container.scss";
 import Sidebar from '../shared/Sidebar';
 
 // Components
+import Home from "../components/Home";
+import Uploader from '../components/Uploader';
 
 const AppContainer = () => {
     return (
@@ -15,18 +17,12 @@ const AppContainer = () => {
 
                 <div className="app-body">
                     <Route exact path="/" component={Home} />
+                    <Route path="/analyzer" component={Uploader} />
                 </div>
             </Router>
         </div>
     )
 }
 
-const Home = () => {
-    return (
-        <div>
-            XD
-        </div>
-    )
-}
 
 export default AppContainer;
