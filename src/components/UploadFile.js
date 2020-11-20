@@ -10,7 +10,7 @@ const UploadFile = (props) => {
     return (
         <div className="upload-file">
             <div className="format">
-                <p>{props.format}</p>
+                <p>mp4</p>
             </div>
             <div className="file-progress">
                 <div className="file-info">

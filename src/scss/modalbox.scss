@@ -1,0 +1,178 @@
+$modal-background: rgba(50,50,50,0.4);
+
+
+.modalbox-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $modal-background;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal-box {
+        height: 50%;
+        width: 50%;
+        padding: 50px;
+        position: relative;
+        background-color: white;
+        box-shadow: 5px 5px 20px #6a6d70;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+
+        .analysis {
+            height: 100%;
+            width: 100%;
+
+            .title {
+                height: 30%;
+                width: 100%;
+            }
+    
+            i {
+                font-size: 120px;
+                color: #293349;
+            }
+            input {
+                font-size: 40px;
+                border: 3px solid #f05732;
+            }
+    
+            .listfolders {
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                overflow-y: scroll;
+                list-style: none;
+    
+                .folder {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .creation {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+
+            i {
+                font-size: 150px;
+                color: #293349;
+            }
+
+            form {
+                position: relative;
+                padding: 15px 0 0;
+                margin-top: 10px;
+                width: 50%;
+
+                .form__field {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 2px solid #9b9b9b;
+                    outline: none;
+                    color: #9b9b9b;
+                    padding: 7px 0;
+                    background-color: transparent;
+                    transition: border-color 0.2s;
+                    font-size: 20px;
+
+                    &::placeholder {
+                        color: transparent;
+                    }
+                    
+                    &:placeholder-shown ~ .form__label {
+                        font-size: 1.3rem;
+                        cursor: text;
+                        top: 20px;
+                    }
+                }
+
+                .form__label {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    transition: 0.2s;
+                    color: #9b9b9b;
+                    font-size: 20px;
+                }
+
+                .form__field:focus {
+                    ~ .form__label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 15px;
+                        color: #f05732;
+                        font-weight:700;    
+                    }
+                    padding-bottom: 6px;  
+                    font-weight: 700;
+                    border-width: 3px;
+                    border-image: linear-gradient(to right, #f05732, #f05732);
+                    border-image-slice: 1;
+                  }
+
+
+            }
+
+            .modal-options {
+                width: 25%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 10px;
+
+                input {
+                    margin: 10px;
+                    height: 30px;
+                    width: 100%;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    color: white;
+                }
+                .create {
+                    background-color: rgb(28, 138, 127);
+                }
+            }
+        }
+        
+        .close {
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            margin: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .close:hover {
+            background-color: rgb(200,200,200);
+        }
+
+        .close:focus {
+            outline: none;
+        }
+    
+    }
+}

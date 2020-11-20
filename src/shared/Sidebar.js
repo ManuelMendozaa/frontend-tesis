@@ -14,25 +14,19 @@ const Sidebar = () => {
             <div className="sidebar-options">
                 <NavLink exact to="/" activeClassName="nav-active">
                     <div className="option-container">
-                        <p><i className="fas fa-home"></i>Home</p>
+                        <p><i className="fas fa-home"></i>Inicio</p>
                     </div>
                 </NavLink>
 
                 <NavLink to="/analyzer" activeClassName="nav-active">
                     <div className="option-container">
-                        <p><i className="fas fa-robot"></i>Analyzer</p>
+                        <p><i className="fas fa-robot"></i>Analizar</p>
                     </div>
                 </NavLink>
 
                 <NavLink to="/collections" activeClassName="nav-active">
                     <div className="option-container">
-                        <p><i className="fas fa-folder"></i>Collections</p>
-                    </div>
-                </NavLink>
-
-                <NavLink to="/analytics" activeClassName="nav-active">
-                    <div className="option-container">
-                        <p><i className="fas fa-chart-pie"></i>Analytics</p>
+                        <p><i className="fas fa-folder"></i>Colecciones</p>
                     </div>
                 </NavLink>
             </div>

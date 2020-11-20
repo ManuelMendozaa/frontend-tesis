@@ -19,12 +19,13 @@
     }
 
     .uploader-list {
-        height: 70%;
+        height: 63%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #efefef;
+        overflow-y: scroll;
         
         border-bottom: 1.5px solid #dfdfdf;
         
@@ -36,7 +37,7 @@
         
         li {
             list-style: none;
-            background-color: transparent;
+            background-color: white;
         }
     }
 
@@ -92,7 +93,7 @@
                 border-radius: 5px;
             }
 
-            input {
+            .file-input {
                 background-color: #0199f1;
             }
 
@@ -101,7 +102,26 @@
             }
         }
 
+        
+
     }
 
+    .analysis-button {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        button {
+            height: 90%;
+            width: 40%;
+            border: none;
+            color: white;
+            font-size: 17px;
+            border-radius: 5px;
+            background-color: rgb(16,163,78);
+        }
+    }
 
 }

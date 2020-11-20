@@ -1,0 +1,107 @@
+.collections-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+    .title {
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1.5px solid #dfdfdf;
+    }
+
+    .collections {
+        height: 100%;
+        width: 100%;
+        background-color: #efefef;
+
+        ul {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                height: 30vh;
+                width: 30vh;
+                padding: 5%;
+                color: #2f3844;
+                
+                padding: 20px;
+
+                i {
+                    font-size: 80px;
+                }
+                i:hover {
+                    cursor: pointer;
+                }
+                p {
+                    width: 90%;
+                    text-align: center;
+                    overflow: hidden;
+                }
+            }
+        }
+        .collections-options {
+            height: 13%;
+            width: 20%;
+            position: fixed;
+            display: flex;
+            flex-flow: row;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+
+            button {
+                height: 100%;
+                width: 50%;
+                margin: 3%;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                color: white;
+            }
+            .create {
+                background-color: rgb(28, 138, 127);
+            }
+            .delete {
+                background-color: #f05732;
+            }
+        }
+
+        .fa-folder-minus, .fa-video-slash {
+            animation: shake 1s infinite;
+        } 
+    }
+
+    
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(1px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
